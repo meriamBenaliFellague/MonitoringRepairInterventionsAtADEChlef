@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/spiny-lobster');
+
+:root{
+     /*fonts*/
+     --font-family: 'Poppins', sans-serif;
+     --Font-family: 'Spiny Lobster', sans-serif;
+     --Font-weight1: 400;
+     --Font-weight2: 600;
+     --Font-weight3: 800;
+     /*colors*/
+     --darck-blue: #085088;
+     --main-color: rgba(173, 199, 229, 0.808);
+     --blue-color:#a9c5db;
+     --blue-opacity:#d1e4ff;
+     --white-alpha-40:rgba(255,255,255,0.40);
+     --white-alpha-25:rgba(255,255,255,0.25);
+     --backdrop-filter: blur(5px);
+     --box-shaow: 2px 2px 5px rgba(0,0,0,0.40);
+    }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--font-family);
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    width: 82%;
+    margin-left: 18%;
+    z-index: 1000;
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+    padding: 20px 40px;
+    transition: 0.5s;
+    justify-content: space-between;
+}
+
+.logo > img {
+    width: 100px;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.logo{
+    width: 150px;
+    padding-left: 20%;
+    padding-top: 5%;
+}
+
+.txt{
+    width: 800px;
+}
+
+.txt > h3{
+    color: var(--blue-color);
+}
+
+.navBar{
+    width: 200px;
+}
+
+.navBar a{
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.8rem 1rem;
+    transition: all 0.3s;
+    font-family: var(--Font-family);
+    background-color: var(--pink-opacity);
+    color: var(--blue-color);
+    box-shadow:   var(--box-shaow);
+}
+.navBar a:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.HomePage {
+    position: relative;
+    width: 100%;
+    min-height: 610px;
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    place-content: center;
+    text-align: center;
+    z-index: -1;
+    width: 82%;
+    margin-left: 18%;
+}
+.titel{
+    max-width: 600px;
+}
+.titel > h3{
+    font-family: var(--font-family);
+    font-size: 27px;
+    color: var(--blue-color);
+}
+h1{
+    margin-top: 250px;
+    font-family: var(--Font-family);
+    color: black;
+    font-size: 44px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.img > img{
+    margin-top: 140px;
+    margin-left: 80px;
+    width: 480px;
+}
+
+footer {
+    background-color: var(--main-color);
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: start;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    width: 82%;
+    margin-left: 18%;
+}
+
+.contact > h3 {
+    font-family: var(--Font-family);
+    letter-spacing: 0.1cap;
+    margin-bottom: 15px;
+    color: var(--darck-blue);
+}
+
+p > img {
+    width: 18px;
+    margin-right: 5px;
+}
+
+.sideBar{
+    width: 250px;
+    height: 100%;
+    background-color: rgb(252, 252, 252);
+    box-shadow: var(--box-shaow);
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+.headerSideBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20%;
+
+}
+button{
+    background-color: white;
+    box-shadow: var(--box-shaow);
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    padding-inline: 10px;
+    border-radius: 50%;
+    background-color: var(--darck-blue);
+    margin-top: 5px;
+    margin-right: 5px;
+}
+span > img{
+    width: 20px;
+    background-color: white;
+    background-color: var(--darck-blue);
+    margin-left: 3px;
+    margin-top: 2px;
+}
+li > img{
+    width: 40px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li{
+    padding: 10px 20px;
+    box-shadow: var(--box-shaow);
+    border-radius: 25px;
+    width: 95%;
+    margin-bottom: 15px;
+}
+li:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+li > a{
+    color: black;
+}
+.logoFooter > img{
+    width: 120px;
+}
