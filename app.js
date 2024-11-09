@@ -21,8 +21,8 @@ function SideBar(){
         a2.innerText = '';
         a3.innerText = '';
         li1.style.padding = '7px 4px';
-        li2.style.padding = '7px 4px';
-        li3.style.padding = '7px 4px';
+        li2.style.padding = '7px 10px';
+        li3.style.padding = '7px 10px';
         li1.style.width = '90%';
         li2.style.width = '90%';
         li3.style.width = '90%';

@@ -86,6 +86,8 @@ header {
 }
 
 .HomePage {
+    background: rgb(212,236,255);
+background: radial-gradient(circle, rgba(212,236,255,1) 0%, rgba(255,255,255,1) 100%);
     position: relative;
     width: 100%;
     min-height: 610px;
@@ -182,6 +184,10 @@ span > img{
 li > img{
     width: 40px;
 }
+#li2 > img , #li3 > img{
+    width: 23px;
+    margin-right: 10px;
+}
 ul{
     display: flex;
     flex-direction: column;
@@ -203,4 +209,19 @@ li > a{
 }
 .logoFooter > img{
     width: 120px;
+}
+.media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 120px;
+    margin-top: 20px;
+}
+.media > a > img{
+    width: 30px;
+    transition: all 0.5s;
+}
+
+.media > a > img:hover{
+    transform: scale(1.5,1.5);
 }
